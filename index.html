@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surabaya City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+
+        .carousel-item img {
+            filter: brightness(75%);
+            height: 550px;
+        
+            object-fit: cover; 
+            width: 100%; 
+        }
+
+        .accordion {
+            width: 90%;
+        }
+
+        .accordion-body p {
+            color: #bbbbbb;
+        }
+        
+
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-footer p-3">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand ms-lg-5" href="#">
+                <img src="./img/logo-portal.png" alt="Logo" class="w-100" style="max-width: 130px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger mx-2 active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger mx-2" href="FOOD.html">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger mx-2" href="DESTINATION.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger mx-2" href="shorts.html">Shorts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="navbar-brand me-lg-5" href="https://www.google.com/search?q=cuaca+nganjuk+saat+ini">
+                <div class="navbar-weather" id="weather-widget">
+                    <div class="weather-loading">Loading...</div>
+                  </div>
+            </a>
+            <a class="navbar-brand me-lg-5" href="#">
+                <img src="./img/NganjukLogoNew.png" alt="Surabaya" class="w-100" style="max-width: 40px;">
+            </a>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide my-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/foto1.png" class="d-block w-75 mx-auto rounded" alt="foto1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Nganjuk</h5>
+                    <p>Kota Angin</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/jayastamba.jpg" class="d-block w-75 mx-auto rounded" alt="monumen jayastamba">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Tugu Jayastamba</h5>
+                    <p>Tugu ini didirikan sebagai penghormatan terhadap prasasti bersejarah yang ditemukan di Desa Candilor, yang mencatat peristiwa penting terkait kemenangan Mpu Sindok dalam perang pada tahun 859 Saka (937 Masehi).</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/foto2.jpg" class="d-block w-75 mx-auto rounded" alt="sawah">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Kota Bawang Merah</h5>
+                    <p>Nganjuk merupakan salah satu sentra penghasil bawang merah terbesar di Indonesia, menempati posisi kedua setelah Kabupaten Brebes.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/foto3.jpg" class="d-block w-75 mx-auto rounded" alt="sedudo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Air Terjun Sedudo</h5>
+                    <p>Masyarakat setempat percaya bahwa mandi di air terjun ini dapat membuat seseorang awet muda dan menyembuhkan berbagai penyakit. Mitos ini telah menarik banyak pengunjung, terutama pada bulan Suro dalam kalender Jawa</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/candingetos.jpg" class="d-block w-75 mx-auto rounded" alt="candingetos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Candi Ngetos</h5>
+                    <p>Candi Ngetos merupakan tempat yang didedikasikan untuk penyimpanan abu kremasi Raja Hayam Wuruk, salah satu raja paling berpengaruh dalam sejarah Indonesia. </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+  <div class="container w-75">
+    <div class="row">
+        <div class="col-sm">
+            <p>
+            Kabupaten Nganjuk terletak di Provinsi Jawa Timur, Indonesia, dengan koordinat astronomis antara 111°5' hingga 112°13' Bujur Timur dan 7°20' hingga 7°59' Lintang Selatan123.
+            <br>
+            Batas Wilayah:
+            <ol>
+                <li>Utara: Kabupaten Bojonegoro</li>
+                <li>Timur: Kabupaten Jombang dan Kediri</li>
+                <li>Selatan: Kabupaten Kediri dan Ponorogo</li>
+                <li>Barat: Kabupaten Madiun.</li>
+            </ol>
+            <br>
+            Dengan luas wilayah sekitar 122.433 km², Nganjuk merupakan daerah yang memiliki topografi bervariasi, termasuk dataran rendah dan pegunungan. Ibu kota kabupaten ini adalah Nganjuk, yang juga menjadi pusat pemerintahan dan aktivitas ekonomi daerah tersebut</p>
+        </div>
+        <div class="col-sm">
+          <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506192.82937725657!2d111.61760671838552!3d-7.615017429625049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e784be1466228d1%3A0x3027a76e352bdc0!2sNganjuk%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1728304302854!5m2!1sen!2sid"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+  </div>
+  <br>
+
+    <div class="container mb-5">
+        <div class="accordion d-block mx-auto" id="accordionExample">
+            <div class="accordion-item bg-footer">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-footer text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>Sejarah Kabupaten Nganjuk</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Nganjuk, yang dahulu dikenal sebagai Anjuk Ladang (berarti Tanah Kemenangan dalam bahasa Jawa Kuno), dibangun pada tahun 937 Masehi. Berdasarkan peta Jawa Tengah dan Jawa Timur dari awal 1811, wilayah Nganjuk terdiri dari Berbek, Godean, Nganjuk, dan Kertosono, di mana hanya Nganjuk yang merupakan mancanegara Kasunanan Surakarta, sedangkan wilayah lainnya dikuasai Belanda dan Kasultanan Yogyakarta. Setelah Perjanjian Sepreh 1830, semua kabupaten di Nganjuk berada di bawah pengawasan pemerintah kolonial Belanda. Pada tahun 1880, ibu kota Kabupaten Berbek dipindahkan ke Nganjuk, yang resmi menjadi pusat pemerintahan pada tahun 1885 sesuai dengan keputusan Gubernur Jenderal Nederlandsch Indie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-footer">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-footer text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Kenapa Nganjuk dijuluki Kota Angin?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Nganjuk dijuluki "Kota Angin" karena letak geografisnya yang unik, di mana wilayahnya berada di antara dua gunung besar, yaitu Gunung Wilis dan Gunung Arjuno. Hal ini menyebabkan frekuensi angin di daerah ini sangat tinggi, terutama saat pergantian musim hujan ke musim kemarau, dengan angin kencang yang sering melanda setiap pagi, siang, sore, dan malam. Meskipun suhu tetap terasa panas dan kering, kondisi geografis ini membuat Nganjuk sering kali disebut sebagai "Kota Angin" dengan alasan frekuensi angin yang tinggi dan karakteristik cuacanya yang khas125</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-footer">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-footer text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Apa saja festival atau acara tradisional yang diadakan di Nganjuk
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Di Kabupaten Nganjuk, terdapat beberapa festival dan acara tradisional yang mencerminkan kekayaan budaya masyarakat setempat. Beberapa di antaranya adalah Ritual Ruwatan untuk membebaskan individu dari kutukan, Lebaran Ketupat sebagai penebusan dosa dan silaturahmi, Tradisi Nyadran yang melibatkan ziarah kubur sebelum Ramadhan, dan Mandi Air Terjun pada 1 Suro di air terjun Sedudo yang dipercaya memberikan awet muda. Selain itu, ada Upacara Tingkeban untuk mendoakan kehamilan, Larung Sesaji sebagai syukuran atas hasil bumi, dan Festival Wayang Timplong yang menampilkan kesenian tradisional dalam berbagai acara. Acara-acara ini memperkuat ikatan sosial dan melestarikan warisan budaya di Nganjuk.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-footer">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-footer text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        Apa salah satu peristiwa sejarah paling penting yang pernah terjadi di Nganjuk?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Salah satu peristiwa paling penting adalah pertempuran antara prajurit Empu Sendok melawan tentara Kerajaan Melayu/Sriwijaya di Desa Candirejo, Kecamatan Loceret, sekitar tahun 929 M. Setelah kemenangan ini, Empu Sendok dinobatkan sebagai Raja dengan gelar Sri Maharaja Empu Sendok Sri Isanawikrama Dharmatunggadewa dan mendirikan tugu kemenangan atau Jayastamba dan Candi Jayamerta. Masyarakat desa di sekitar candi diberi hadiah sebagai desa perdikan atau desa bebas pajak dengan status sima swatantra bernama ANJUK LADANG, yang kemudian berkembang menjadi Nganjuk
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-footer">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-footer text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                        Apa makna simbol atau lambang dari Kabupaten Nganjuk?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lambang Kabupaten Nganjuk mengandung makna yang kompleks dan simbolis, meliputi beberapa unsur yang saling terkait. Perisai bersudut lima berdasar biru dan bertepi putih melambangkan jiwa kerakyatan, kesetiaan, dan kesucian masyarakat Nganjuk yang selalu siaga dalam menghadapi segala tantangan. Bintang bersudut lima berwarna emas 70 melambangkan Ketuhanan Yang Maha Esa, cita-cita luhur, dan suci sebagai pedoman perjuangan untuk mewujudkan cita-cita masyarakat adil dan makmur.
+                        <br>    <br>
+                        Rantai berbentuk lingkaran yang melingkari perisai dan bintang melambangkan kebulatan tekad rakyat Nganjuk, yang dilandasi semangat perjuangan dan persatuan. Tiga puncak gunung berwarna hitam memiliki arti filosofis Tri Dharma Amerta dan secara historis menunjukkan Jaman Kejayaan, Jaman Penjajahan, dan Jaman Kemerdekaan. Sawah dan sungai digambarkan dalam rantai yang berbentuk lingkaran, mempunyai makna: Dengan tekad yang bulat dan kekayaan alam yang melimpah memberikan keyakinan kepada masyarakat Nganjuk untuk berjuang mewujudkan tercapainya masyarakat adil dan makmur.
+                        <br> <br>
+                        Padi dan kapas yang digambarkan dalam jumlah tertentu (17 butir padi, 8 buah kapas, daun padi 4 helai, dan daun kapas 5 helai) mencerminkan semangat dan jiwa proklamasi 17-8-45. Ini menunjukkan bahwa masyarakat Nganjuk berjuang untuk mencapai keadilan dan kemakmuran dengan pangan dan sandang yang menjadi kebutuhan pokok rakyat sehari-hari. Sayap dengan 20 helai bulu berwarna emas melambangkan wilayah daerah terdiri dari 20 kecamatan. Pita bertuliskan angka Jawa yang mengikat dua pangkal sayap mewujudkan angka 937 M, yang merupakan ditetapkannya tahun hari jadi Nganjuk. Dengan demikian, lambang Kabupaten Nganjuk secara keseluruhan mengandung makna sebagai berikut: Dengan semangat dan jiwa proklamasi 17-8-45 rakyat Nganjuk yang telah tumbuh dan berkembang sejak tahun 937 M, bersama Pemerintah Daerah yang berwibawa bertekad bulat untuk berjuang terus dengan segala potensi daerahnya, sehingga tercapai cita-cita luhur, masyarakat adil dan makmur berdasarkan Pancasila dan UUD 1945.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3 class="footer__col-title">Biodata</h3>
+                    <ul class="footer__nav-list">
+                        <li>Muhammad Fariq Faqih</li>
+                        <li>24051204084</li>
+                        <li>Teknik Informatika 2024</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="footer__col-title">Social</h3>
+                    <ul class="footer__nav-list">
+                        <li><a href="https://www.instagram.com/nuxxtttt/" class="footer__nav-link">Instagram : @nuxxtttt</a></li>
+                        <li><a href="https://x.com/fariq_faqih" class="footer__nav-link">X : @fariq_faqih</a></li>
+                        <li><a href="https://www.linkedin.com/in/muhammad-fariq-faqih-04219b195/" class="footer__nav-link">Linkedin : M. Fariq Faqih</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="footer__col-title"></h3>
+                    <ul class="footer__nav-list">
+                        <li>Nganjuk</li>
+                        <li>East Java</li>
+                        <li>Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyrights text-center">
+                &copy; 2024 by Muhammad Fariq Faqih
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nganjuk - Shorts</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .video-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth; 
+            position: relative;
+        }
+
+        .video-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .video-card {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            scroll-snap-align: start;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-caption {
+            position: absolute;
+            bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            max-width: 90%;
+            text-align: center;
+            font-family: "Montserrat";
+            font-size: 15px;
+        }
+
+        .control-buttons {
+            position: fixed;
+            top: 50%;
+            right: 20px; 
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .control-buttons button {
+            background-color: #dc3545;
+            border: none;
+            padding: 10px;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .control-buttons button:hover {
+            background-color: #b02a37;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-footer p-3">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand ms-lg-5" href="index.html">
+                <img src="./img/logo-portal.png" alt="Logo" class="w-100" style="max-width: 130px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger mx-2" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger mx-2" href="food.html">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger mx-2" href="destination.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger mx-2 active" href="#">Shorts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="navbar-brand me-lg-5" href="https://www.google.com/search?q=cuaca+nganjuk+saat+ini">
+                <div class="navbar-weather" id="weather-widget">
+                    <div class="weather-loading">Loading...</div>
+                </div>
+            </a>
+            <a class="navbar-brand me-lg-5" href="#">
+                <img src="./img/NganjukLogoNew.png" alt="Surabaya" class="w-100" style="max-width: 40px;">
+            </a>
+        </div>
+    </nav>
+
+    <div class="control-buttons">
+        <button id="upBtn">⬆️</button>
+        <button id="downBtn">⬇️</button>
+    </div>
+
+    <!-- Video container -->
+    <div class="video-container container w-25 pt-2" id="videoContainer">
+        <div class="video-card">
+            <video id="video1" src="img/bumper.mp4" muted playsinline loop></video>
+            <div class="video-caption bg-black bg-opacity-50 text-white w-100 text-start">
+                <small>Bumper video</small></div>
+        </div>
+        <div class="video-card">
+            <video id="video2" src="img/video1.mp4" muted playsinline loop></video>
+            <div class="video-caption bg-black bg-opacity-50 text-white w-100 text-start">@cahyoguantengpol <hr>#gunungwilis #nganjuk #pendakiindonesia #sunrise #lautanawan</div>
+        </div>
+        <div class="video-card">
+            <video id="video3" src="img/video2.mp4" muted playsinline loop></video>
+            <div class="video-caption bg-black bg-opacity-50 text-white w-100 text-start">@fhikishu <hr>#nganjukviral #watulawangnganjuk #explorenganjuk #gunungwilis #ngecampkuy #campinghits #fyp #desangliman #nganjukstory</div>
+        </div>
+        <div class="video-card">
+            <video id="video4" src="img/video3.mp4" muted playsinline loop></video>
+            <div class="video-caption bg-black bg-opacity-50 text-white w-100 text-start">@jotulondo.cafe.gl <hr>#Emang boleh se syahdu ini ?? #fyp #fypシ゚viral #wisatanganjuk #nganjuk #nganjukkotaangin #bajulan #camping #nganjuk24jam 
+            </div>
+        </div>
+        <div class="video-card">
+            <video id="video5" src="img/video4.mp4" muted playsinline loop></video>
+            <div class="video-caption bg-black bg-opacity-50 text-white w-100 text-start">@saipi_angin99 <hr>📍sedudo🥶 #nganjuk #nganjukkotaangin #sedudo
+            </div>
+        </div>
+        <div class="video-card">
+            <video id="video6" src="img/video5.mp4" muted playsinline loop></video>
+            <div class="video-caption bg-black bg-opacity-50 text-white w-100 text-start">@infoseputarnganjuk <hr>📍Best view sih ini😍 #nganjuk #nganjukviral #aslinganjuk #nganjuk_jawa_timur #nganjukhits #nganjukhits #wilisview
+            </div>
+        </div>
+    </div>
+
+
+
+     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function resetOtherVideos(currentVideo) {
+            const videos = document.querySelectorAll('video');
+            videos.forEach(video => {
+                if (video !== currentVideo) {
+                    video.pause();
+                    video.muted = true; 
+                    video.currentTime = 0; 
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const video = entry.target;
+                    video.play();
+                    video.muted = false; 
+                    resetOtherVideos(video);
+                } else {
+                    entry.target.pause();
+                    entry.target.muted = true;
+                }
+            });
+        }, {
+            threshold: 0.5 
+        });
+
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            observer.observe(video);
+        });
+
+        const videoContainer = document.getElementById('videoContainer');
+        const videoCards = document.querySelectorAll('.video-card');
+        let currentIndex = 0;
+
+        document.getElementById('downBtn').addEventListener('click', () => {
+            if (currentIndex < videoCards.length - 1) {
+                currentIndex++;
+                videoCards[currentIndex].scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        document.getElementById('upBtn').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                videoCards[currentIndex].scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

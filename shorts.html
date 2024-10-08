@@ -16,7 +16,15 @@
             scroll-snap-type: y mandatory;
             scroll-behavior: smooth; 
             position: relative;
+            width: 25%;
         }
+
+        @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .video-container {
+    width: 100%;
+  }
+}
 
         .video-container::-webkit-scrollbar {
             display: none;
@@ -123,7 +131,7 @@
     </div>
 
     <!-- Video container -->
-    <div class="video-container container w-25 pt-2" id="videoContainer">
+    <div class="video-container container pt-2" id="videoContainer">
         <div class="video-card">
             <video id="video1" src="img/bumper.mp4" muted playsinline loop></video>
             <div class="video-caption bg-black bg-opacity-50 text-white w-100 text-start">
